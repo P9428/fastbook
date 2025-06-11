@@ -6,18 +6,25 @@ daily_blocks:
     duration: "30-60 minutes"
     daily_focus:
       day1: # Corresponds to Monday for script logic, but label as Day 1
+        id: block1_day1_theme
         theme: "Technical Pitch for Engineers (Theme 1: Conversational Core & Semantic Understanding)"
       day2:
+        id: block1_day2_theme
         theme: "Investor Pitch (Core Message & Moat 1: Cultural Authenticity)"
       day3:
+        id: block1_day3_theme
         theme: "User Pitch (Focus: Pain Points & 'Aha!' Moment of FlowState)"
       day4:
+        id: block1_day4_theme
         theme: "Technical Pitch for Engineers (Theme 2: Real-time Audio & Plugin Architecture)"
       day5:
+        id: block1_day5_theme
         theme: "Investor Pitch (Core Message & Moat 2: AI-Driven Collaborative Creativity)"
       day6:
+        id: block1_day6_theme
         theme: "User Pitch (Focus: Benefits of Effortless Creation & Breaking Creative Blocks)"
       day7:
+        id: block1_day7_theme
         theme: "Review & Consolidate: What language is resonating most across all pitches? What are the weakest points?"
     win_condition: "Internalize the language, anticipate questions, and refine your articulation. This makes every future interaction more impactful."
 
@@ -26,30 +33,35 @@ daily_blocks:
     duration: "1-2 hours"
     weekly_rotation: # Corresponds to Monday-Friday
       monday:
+        id: block2_monday_user_interviews
         activity: "User Interviews (Outreach & Execution)"
         details: |
           Identify 2-3 local Chicago producers/musicians/engineers or online contacts.
           Send personalized outreach emails/DMs to schedule brief virtual or in-person chats.
           Conduct interviews focusing on their DAW frustrations, creative flow blockers, and reactions to the FlowState concept. Record (with permission) or take detailed notes.
       tuesday:
+        id: block2_tuesday_paper_prototyping
         activity: "Paper Prototyping / Vision Walkthrough Prep & Execution"
         details: |
           Sketch out a new user flow or refine an existing one based on last week's feedback.
           Schedule 1-2 vision walkthroughs with contacts from your network (can be users or potential technical talent).
           Present the "Imagine you say..." scenarios and gather reactions.
       wednesday:
+        id: block2_wednesday_community_deep_dive
         activity: "Online Community/Forum Deep Dive"
         details: |
           Spend time in relevant subreddits (e.g., r/musicproduction, r/ableton, r/LogicPro), forums (e.g., Gearslutz, KVR Audio), and Discord servers.
           Look for discussions related to creative roadblocks, DAW limitations, or wishes for future music creation tools.
           Document common pain points and direct quotes that validate the FlowState hypothesis.
       thursday:
+        id: block2_thursday_competitor_analysis
         activity: "Competitor Analysis & Feature Brainstorm"
         details: |
           Research 1-2 existing tools that aim to solve *parts* of the problem FlowState addresses (even if indirectly).
           What are their strengths/weaknesses? How does FlowState differentiate?
           Brainstorm specific features for FlowState that directly address gaps or frustrations users have with current solutions.
       friday:
+        id: block2_friday_synthesize_learnings
         activity: "Synthesize Weekly Learnings & Update 'Problem Evidence' Doc"
         details: |
           Review all notes, recordings, and observations from the week.
@@ -62,28 +74,33 @@ daily_blocks:
     duration: "1-2 hours"
     weekly_rotation: # Corresponds to Monday-Friday
       monday:
+        id: block3_monday_engineer_networking
         activity: "Targeted Engineer Networking (Online)"
         details: |
           Spend time on GitHub, LinkedIn, or relevant Discord servers identifying engineers whose work aligns with FlowState's needs (AI/ML, audio processing, real-time systems).
           Draft and send 1-2 highly personalized outreach messages, highlighting the specific technical challenges at FlowState you think would excite them.
       tuesday:
+        id: block3_tuesday_meetup_attendance
         activity: "Local Tech Meetup/Event Research & Attendance (or Virtual Equivalent)"
         details: |
           Identify relevant tech meetups in Chicago (or online events if remote) focusing on AI, Machine Learning, Audio Tech, or startups.
           Attend one event with the goal of making 1-2 meaningful connections. Be prepared to talk about FlowState compellingly.
       wednesday:
+        id: block3_wednesday_advisor_identification
         activity: "Advisor Identification & Initial Outreach Prep"
         details: |
           Research individuals in the music tech, AI, or startup space whose expertise could be invaluable to FlowState.
           Look for people who have successfully built similar ventures or have deep domain knowledge.
           Draft personalized outreach messages for 1-2 potential advisors, focusing on why their specific experience is relevant.
       thursday:
+        id: block3_thursday_university_connections
         activity: "University & Research Lab Connection Building"
         details: |
           Explore CS/Music Technology programs at universities (e.g., Northwestern, UChicago, UIC locally, or others known for AI/Audio research).
           Identify professors or research labs working on relevant problems.
           Draft an email to 1-2 contacts introducing FlowState and exploring potential for collaboration or student talent pipelines.
       friday:
+        id: block3_friday_relationship_nurturing
         activity: "Follow-ups & Relationship Nurturing"
         details: |
           Send follow-up messages to any promising contacts made throughout the week.
@@ -96,6 +113,7 @@ daily_blocks:
     duration: "1 hour"
     activities:
       daily:
+        id: block4_daily_engagement
         description: "Discord Server & Social Media Engagement"
         details: |
           Post an engaging question, poll, or piece of content on your FlowState Discord server and other social channels.
@@ -103,12 +121,18 @@ daily_blocks:
       weekly_show_dont_tell: # This will be a general reminder in the script
         description: "'Show, Don't Just Tell' Content (Choose one or work on one per week)"
         options:
-          - "Create and share a simple mockup of a FlowState UI element."
-          - "Post an anonymized, powerful quote from a user interview that highlights the need for FlowState."
-          - "If you experiment with existing AI tools to simulate a part of the FlowState experience, share a short screen recording and explain how FlowState will be different/better."
-          - "Write a short blog post or Twitter thread about the core philosophy behind FlowState."
-          - "Share a 'behind-the-scenes' glimpse of your research or prototyping process (without revealing IP)."
+          - id: block4_showtell_mockup
+            text: "Create and share a simple mockup of a FlowState UI element."
+          - id: block4_showtell_quote
+            text: "Post an anonymized, powerful quote from a user interview that highlights the need for FlowState."
+          - id: block4_showtell_aitool_demo
+            text: "If you experiment with existing AI tools to simulate a part of the FlowState experience, share a short screen recording and explain how FlowState will be different/better."
+          - id: block4_showtell_blog_post # Added ID for this option
+            text: "Write a short blog post or Twitter thread about the core philosophy behind FlowState."
+          - id: block4_showtell_bts_process # Added ID for this option
+            text: "Share a 'behind-the-scenes' glimpse of your research or prototyping process (without revealing IP)."
       ongoing_promotion:
+        id: block4_ongoing_promotion
         description: "'Founding Member' Program Promotion"
         details: "Subtly remind your community about the conceptual 'Founding Member' program and the benefits of early engagement (e.g., early access, direct input, exclusive updates)."
     win_condition: "Grow an engaged pre-launch community that feels invested in FlowState's success and eagerly anticipates the MVP. Build your email list."
@@ -118,15 +142,19 @@ daily_blocks:
     duration: "30-60 minutes"
     monthly_rotation: # Corresponds to Week 1-4 of the month
       week1:
+        id: block5_week1_pitch_deck_iteration
         activity: "Investor Pitch Deck Iteration"
         details: "Work on one slide or section of your pitch deck, incorporating new learnings from user interviews or market research. Focus on the problem, solution, market size, and your unique moats."
       week2:
+        id: block5_week2_roadmap_budget
         activity: "Pre-MVP Roadmap & Budget Refinement"
         details: "Review and update your lean roadmap to MVP. What are the absolute essential features? What are the minimal costs to get there? Identify key milestones and resource needs."
       week3:
+        id: block5_week3_investor_targeting
         activity: "Investor Target List Building & Research"
         details: "Identify 5-10 angel investors or early-stage VCs who have a track record of investing in music tech, AI, or SaaS. Research their portfolio companies and investment theses. Look for warm introduction paths."
       week4:
+        id: block5_week4_market_sizing
         activity: "Market Sizing & Competitive Landscape Deep Dive"
         details: "Refine your understanding of the Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM). Update your competitive analysis with any new players or insights."
     win_condition: "Continuously refine your investment case and build relationships so you're prepared when the time is right to seek capital."
